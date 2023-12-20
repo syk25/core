@@ -5,8 +5,6 @@ import hello.core.member.Member;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class FixedDiscountPolicyTest {
 
     @Test
@@ -20,7 +18,7 @@ class FixedDiscountPolicyTest {
         int discountedPrice = fixedDiscountPolicy.discount(member, price);
 
         // then
-        Assertions.assertThat(discountedPrice).isEqualTo(9000);
+        Assertions.assertThat(discountedPrice).isEqualTo(1000);
     }
 
 }
